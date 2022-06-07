@@ -1,0 +1,133 @@
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1876f2;
+    padding: 5px 5%;
+}
+
+.header-nav-left,
+.header-nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.header-nav-left-img {
+    width: 160px;
+    margin-right: 45px;
+}
+
+.header-nav-left-icon-list {
+    list-style: none;
+}
+
+.header-nav-left-icon-item {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.header-nav-left-icon-item-img {
+    width: 28px;
+}
+
+.header-nav-right-search {
+    background-color: #efefef;
+    width: 350px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.header-nav-right-search-img {
+    width: 18px;
+}
+
+.header-nav-right-search__ip {
+    width: 100%;
+    background: transparent;
+    padding: 10px;
+    outline: none;
+    border: none;
+}
+
+.header-nav-right-user {
+    margin-left: 30px;
+}
+
+.header-nav-right-user-img {
+    width: 40px;
+    border-radius: 50%;
+    padding-top: 6px;
+}
+
+.header-nav-right-user__online {
+    position: relative;
+}
+
+.header-nav-right-user__online::after {
+    content: '';
+    position: absolute;
+    top: 6px;
+    right: 0;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: #41db51;
+    border: 2px solid #fff;
+}
+
+
+/* content */
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 5%;
+}
+
+.container-sidebar-left,
+.container-sidebar-right {
+    flex-basis: 25%;
+    position: sticky;
+    top: 70px;
+    align-self: flex-start;
+}
+
+
+/* sidebar-left */
+
+.sidebar-left-imp-link:last-child {
+    color: #1876f2;
+}
+
+.sidebar-left-imp-link {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    color: #626262;
+    width: fit-content;
+}
+
+.sidebar-left-imp-link-img {
+    width: 25px;
+    margin-right: 15px;
+}
+
+.sidebar-left-imp-links {
+    border-bottom: 1px solid #ccc;
+}
+
+
+/* main */
+
+.container-main {
+    flex-basis: 48%;
+}
