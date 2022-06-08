@@ -34,13 +34,59 @@
                     <img src="./assets/images/search.png" alt="" class="header-nav-right-search-img">
                     <input type="text" class="header-nav-right-search__ip" placeholder="Tìm kiếm trên FaceBook Pha Ke">
                 </div>
-                <div class="header-nav-right-user header-nav-right-user__online">
+                <div class="header-nav-right-user user__online" onclick="settingMenuToggle()">
                     <img src="./assets/images/profile-pic.png" alt="" class="header-nav-right-user-img">
+                </div>
+            </div>
+            <div class="header-setting-menu">
+
+                <div id="header-dark-btn">
+                    <span></span>
+                </div>
+
+                <div class="header-setting-menu-inner">
+                    <div class="main-write-post-user">
+                        <img src="./assets/images/profile-pic.png" alt="" class="main-write-post-user-img">
+                        <div class="main-write-post-user-body">
+                            <p class="main-write-post-user-name">John Nicholson</p>
+                            <a href="#">See your profile</a>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="main-write-post-user">
+                        <img src="./assets/images/feedback.png" alt="" class="main-write-post-user-img">
+                        <div class="main-write-post-user-body">
+                            <p class="main-write-post-user-name">Give Feedback</p>
+                            <a href="#">Help us to improve the new design</a>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="header-setting-menu-links">
+                        <img src="./assets/images/setting.png" alt="" class="header-setting-menu-link-img">
+                        <a class="header-setting-menu-link" href="">Setting & Privacy</a>
+                        <img src="./assets/images/arrow.png" alt="" class="header-setting-menu-link-arrow">
+                    </div>
+                    <div class="header-setting-menu-links">
+                        <img src="./assets/images/help.png" alt="" class="header-setting-menu-link-img">
+                        <a class="header-setting-menu-link" href="">Help & Support</a>
+                        <img src="./assets/images/arrow.png" alt="" class="header-setting-menu-link-arrow">
+                    </div>
+                    <div class="header-setting-menu-links">
+                        <img src="./assets/images/display.png" alt="" class="header-setting-menu-link-img">
+                        <a class="header-setting-menu-link" href="">Display & Accessibility</a>
+                        <img src="./assets/images/arrow.png" alt="" class="header-setting-menu-link-arrow">
+                    </div>
+                    <div class="header-setting-menu-links">
+                        <img src="./assets/images/logout.png" alt="" class="header-setting-menu-link-img">
+                        <a class="header-setting-menu-link" href="">Logout</a>
+                        <img src="./assets/images/arrow.png" alt="" class="header-setting-menu-link-arrow">
+                    </div>
                 </div>
             </div>
         </nav>
     </header>
     <div class="container">
+        <!----------------- Left sidebar ------------------>
         <div class="container-sidebar-left">
             <div class="sidebar-left-imp-links">
                 <a href="#" class="sidebar-left-imp-link">
@@ -76,36 +122,302 @@
                 </a>
             </div>
         </div>
-        <div class="container-main"></div>
-        <div class="container-sidebar-right">
-            <div class="sidebar-right-events">
-                <div class="sidebar-right-events__heading">Events</div>
-                <a href="#" class="sidebar-right-events-link">See All</a>
+
+        <!----------------- Content ------------------>
+        <div class="container-main">
+            <!-- Story -->
+            <div class="main-story-list">
+                <div class="main-story-item story-me">
+                    <img src="./assets/images/upload.png" class="main-story-item-img" />
+                    <div class="main-story-item-name">Post Story</div>
+                </div>
+                <div class="main-story-item story-2">
+                    <img src="./assets/images/member-1.png" class="main-story-item-img" />
+                    <div class="main-story-item-name">Alison Mina</div>
+                </div>
+                <div class="main-story-item story-3">
+                    <img src="./assets/images/member-2.png" class="main-story-item-img" />
+                    <div class="main-story-item-name">Jackson</div>
+                </div>
+                <div class="main-story-item story-4">
+                    <img src="./assets/images/member-3.png" class="main-story-item-img" />
+                    <div class="main-story-item-name">Samona</div>
+                </div>
+                <div class="main-story-item story-5">
+                    <img src="./assets/images/member-4.png" class="main-story-item-img" />
+                    <div class="main-story-item-name">John Doe</div>
+                </div>
             </div>
-            <div class="sidebar-right-events-list">
-                <div class="events-list-left">
-                    <div class="events-list-left-date">18</div>
-                    <div class="events-list-left-month">March</div>
+
+            <!-- Write post -->
+            <div class="main-write-post">
+                <div class="main-write-post-user">
+                    <img src="./assets/images/profile-pic.png" alt="" class="main-write-post-user-img">
+                    <div class="main-write-post-user-body">
+                        <p class="main-write-post-user-name">John Nicholson</p>
+                        <p class="main-write-post-user__status">Public <i class="fa-solid fa-caret-down"></i></p>
+                    </div>
                 </div>
-                <div class="events-list-right">
-                    <div class="events-list-right-name">Social Media</div>
-                    <div class="events-list-right-address"> <i class="events-list-right-address-icon fa-solid fa-location-dot"></i> Willson Tech Park</div>
-                    <a href="#" class="events-list-right-link">More Info</a>
+
+                <div class="main-write-post-input">
+                    <textarea class="main-write-post-input-text" name="" id="" rows="3" placeholder="What's on your mind, John Nicholson"></textarea>
+                    <div class="main-write-post-links">
+                        <a href="#" class="main-write-post-link">
+                            <img src="./assets/images/live-video.png" alt="" class="main-write-post-link-img"> Live Video
+                        </a>
+                        <a href="#" class="main-write-post-link">
+                            <img src="./assets/images/photo.png" alt="" class="main-write-post-link-img"> Photo/Video
+                        </a>
+                        <a href="#" class="main-write-post-link">
+                            <img src="./assets/images/feeling.png" alt="" class="main-write-post-link-img"> Feling/Activity
+                        </a>
+                    </div>
                 </div>
             </div>
-            <div class="sidebar-right-events-list">
-                <div class="events-list-left">
-                    <div class="events-list-left-date">18</div>
-                    <div class="events-list-left-month">March</div>
+            <div class="main-post">
+                <div class="main-write-post-user-wrap">
+                    <div class="main-write-post-user">
+                        <img src="./assets/images/profile-pic.png" alt="" class="main-write-post-user-img">
+                        <div class="main-write-post-user-body">
+                            <p class="main-write-post-user-name">John Nicholson</p>
+                            <samp class="main-write-post-user__time">June 24 2021, 13:40 pm</samp>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
                 </div>
-                <div class="events-list-right">
-                    <div class="events-list-right-name">Social Media</div>
-                    <div class="events-list-right-address"> <i class="events-list-right-address-icon fa-solid fa-location-dot"></i> Willson Tech Park</div>
-                    <a href="#" class="events-list-right-link">More Info</a>
+                <div class="main-post-body">
+                    <p class="main-post-cap">
+                        Subscribe <b>@Easy Tutorials</b> Youtube channel to watch more videos on website development and UI design. <a href="#">#EasyTutorials</a><a href="#">#YouTubeChannel</a>
+                    </p>
+                    <img src="./assets/images/feed-image-1.png" alt="" class="main-post-img">
+                    <div class="main-post__activity-icons-wrap">
+                        <div class="main-post__activity-icons">
+                            <div class="main-post__activity-icon">
+                                <img src="./assets/images/like-blue.png" alt="" class="main-post__activity-icon-img"> 120
+                            </div>
+                            <div class="main-post__activity-icon">
+                                <img src="./assets/images/comments.png" alt="" class="main-post__activity-icon-img"> 40
+                            </div>
+                            <div class="main-post__activity-icon">
+                                <img src="./assets/images/share.png" alt="" class="main-post__activity-icon-img"> 20
+                            </div>
+                        </div>
+                        <div class="main-post__activity-icon-profile">
+                            <img src="./assets/images/profile-pic.png" alt="" class="main-post__activity-icon-profile-img">
+                            <i class="fa-solid fa-sort-down"></i>
+                        </div>
+                    </div>
                 </div>
+            </div>
+            <div class="main-post">
+                <div class="main-write-post-user-wrap">
+                    <div class="main-write-post-user">
+                        <img src="./assets/images/profile-pic.png" alt="" class="main-write-post-user-img">
+                        <div class="main-write-post-user-body">
+                            <p class="main-write-post-user-name">John Nicholson</p>
+                            <samp class="main-write-post-user__time">June 24 2021, 13:40 pm</samp>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                </div>
+                <div class="main-post-body">
+                    <p class="main-post-cap">
+                        Like and share this video with frieds, tag <b>@Easy Tutorials</b> facebook page on your post. Ask your doubts in the comments <a href="#">#EasyTutorials</a><a href="#">#YouTubeChannel</a>
+                    </p>
+                    <img src="./assets/images/feed-image-2.png" alt="" class="main-post-img">
+                    <div class="main-post__activity-icons-wrap">
+                        <div class="main-post__activity-icons">
+                            <div class="main-post__activity-icon">
+                                <img src="./assets/images/like.png" alt="" class="main-post__activity-icon-img"> 200
+                            </div>
+                            <div class="main-post__activity-icon">
+                                <img src="./assets/images/comments.png" alt="" class="main-post__activity-icon-img"> 100
+                            </div>
+                            <div class="main-post__activity-icon">
+                                <img src="./assets/images/share.png" alt="" class="main-post__activity-icon-img"> 10
+                            </div>
+                        </div>
+                        <div class="main-post__activity-icon-profile">
+                            <img src="./assets/images/profile-pic.png" alt="" class="main-post__activity-icon-profile-img">
+                            <i class="fa-solid fa-sort-down"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-post">
+                <div class="main-write-post-user-wrap">
+                    <div class="main-write-post-user">
+                        <img src="./assets/images/profile-pic.png" alt="" class="main-write-post-user-img">
+                        <div class="main-write-post-user-body">
+                            <p class="main-write-post-user-name">John Nicholson</p>
+                            <samp class="main-write-post-user__time">June 24 2021, 13:40 pm</samp>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                </div>
+                <div class="main-post-body">
+                    <p class="main-post-cap">
+                        Like and share this video with frieds, tag <b>@Easy Tutorials</b> facebook page on your post. Ask your doubts in the comments <a href="#">#EasyTutorials</a><a href="#">#YouTubeChannel</a>
+                    </p>
+                    <img src="./assets/images/feed-image-3.png" alt="" class="main-post-img">
+                    <div class="main-post__activity-icons-wrap">
+                        <div class="main-post__activity-icons">
+                            <div class="main-post__activity-icon">
+                                <img src="./assets/images/like.png" alt="" class="main-post__activity-icon-img"> 200
+                            </div>
+                            <div class="main-post__activity-icon">
+                                <img src="./assets/images/comments.png" alt="" class="main-post__activity-icon-img"> 100
+                            </div>
+                            <div class="main-post__activity-icon">
+                                <img src="./assets/images/share.png" alt="" class="main-post__activity-icon-img"> 10
+                            </div>
+                        </div>
+                        <div class="main-post__activity-icon-profile">
+                            <img src="./assets/images/profile-pic.png" alt="" class="main-post__activity-icon-profile-img">
+                            <i class="fa-solid fa-sort-down"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-post">
+                <div class="main-write-post-user-wrap">
+                    <div class="main-write-post-user">
+                        <img src="./assets/images/profile-pic.png" alt="" class="main-write-post-user-img">
+                        <div class="main-write-post-user-body">
+                            <p class="main-write-post-user-name">John Nicholson</p>
+                            <samp class="main-write-post-user__time">June 24 2021, 13:40 pm</samp>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                </div>
+                <div class="main-post-body">
+                    <p class="main-post-cap">
+                        Like and share this video with frieds, tag <b>@Easy Tutorials</b> facebook page on your post. Ask your doubts in the comments <a href="#">#EasyTutorials</a><a href="#">#YouTubeChannel</a>
+                    </p>
+                    <img src="./assets/images/feed-image-4.png" alt="" class="main-post-img">
+                    <div class="main-post__activity-icons-wrap">
+                        <div class="main-post__activity-icons">
+                            <div class="main-post__activity-icon">
+                                <img src="./assets/images/like.png" alt="" class="main-post__activity-icon-img"> 200
+                            </div>
+                            <div class="main-post__activity-icon">
+                                <img src="./assets/images/comments.png" alt="" class="main-post__activity-icon-img"> 100
+                            </div>
+                            <div class="main-post__activity-icon">
+                                <img src="./assets/images/share.png" alt="" class="main-post__activity-icon-img"> 10
+                            </div>
+                        </div>
+                        <div class="main-post__activity-icon-profile">
+                            <img src="./assets/images/profile-pic.png" alt="" class="main-post__activity-icon-profile-img">
+                            <i class="fa-solid fa-sort-down"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-post">
+                <div class="main-write-post-user-wrap">
+                    <div class="main-write-post-user">
+                        <img src="./assets/images/profile-pic.png" alt="" class="main-write-post-user-img">
+                        <div class="main-write-post-user-body">
+                            <p class="main-write-post-user-name">John Nicholson</p>
+                            <samp class="main-write-post-user__time">June 24 2021, 13:40 pm</samp>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                </div>
+                <div class="main-post-body">
+                    <p class="main-post-cap">
+                        Like and share this video with frieds, tag <b>@Easy Tutorials</b> facebook page on your post. Ask your doubts in the comments <a href="#">#EasyTutorials</a><a href="#">#YouTubeChannel</a>
+                    </p>
+                    <img src="./assets/images/feed-image-5.png" alt="" class="main-post-img">
+                    <div class="main-post__activity-icons-wrap">
+                        <div class="main-post__activity-icons">
+                            <div class="main-post__activity-icon">
+                                <img src="./assets/images/like.png" alt="" class="main-post__activity-icon-img"> 200
+                            </div>
+                            <div class="main-post__activity-icon">
+                                <img src="./assets/images/comments.png" alt="" class="main-post__activity-icon-img"> 100
+                            </div>
+                            <div class="main-post__activity-icon">
+                                <img src="./assets/images/share.png" alt="" class="main-post__activity-icon-img"> 10
+                            </div>
+                        </div>
+                        <div class="main-post__activity-icon-profile">
+                            <img src="./assets/images/profile-pic.png" alt="" class="main-post__activity-icon-profile-img">
+                            <i class="fa-solid fa-sort-down"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="main-post-btn">Load More</button>
+        </div>
+
+        <!----------------- right sidebar ------------------>
+        <div class=" container-sidebar-right ">
+            <div class="sidebar-right-title ">
+                <div class="sidebar-right-title__heading ">Events</div>
+                <a href="# " class="sidebar-right-title-link ">See All</a>
+            </div>
+
+            <div class="sidebar-right-events-list ">
+                <div class="events-list-left ">
+                    <div class="events-list-left-date ">18</div>
+                    <div class="events-list-left-month ">March</div>
+                </div>
+                <div class="events-list-right ">
+                    <div class="events-list-right-name ">Social Media</div>
+                    <div class="events-list-right-address "> <i class="events-list-right-address-icon fa-solid fa-location-dot "></i> Willson Tech Park</div>
+                    <a href="# " class="events-list-right-link ">More Info</a>
+                </div>
+            </div>
+
+            <div class="sidebar-right-events-list ">
+                <div class="events-list-left ">
+                    <div class="events-list-left-date ">22</div>
+                    <div class="events-list-left-month ">June</div>
+                </div>
+                <div class="events-list-right ">
+                    <div class="events-list-right-name ">Mobile Marketing</div>
+                    <div class="events-list-right-address "> <i class="events-list-right-address-icon fa-solid fa-location-dot "></i> Willson Tech Park</div>
+                    <a href="# " class="events-list-right-link ">More Info</a>
+                </div>
+            </div>
+
+            <div class="sidebar-right-title ">
+                <div class="sidebar-right-title__heading ">Advertisement</div>
+                <a href="# " class="sidebar-right-title-link ">Close</a>
+            </div>
+
+            <img src="./assets/images/advertisement.png " alt=" " class="sidebar-right-advertisement-img ">
+
+            <div class="sidebar-right-title ">
+                <div class="sidebar-right-title__heading ">Conversation</div>
+                <a href="# " class="sidebar-right-title-link ">Hide Chat</a>
+            </div>
+
+            <div class="sidebar-right__online-list ">
+                <a href="# " class="sidebar-right__online-item ">
+                    <div class="user__online ">
+                        <img src="./assets/images/member-1.png " alt=" " class="sidebar-right__online-img ">
+                    </div>
+                    <p class="sidebar-right__online-name ">Alison Mina</p>
+                </a>
+                <a href="# " class="sidebar-right__online-item ">
+                    <div class="user__online ">
+                        <img src="./assets/images/member-2.png " alt=" " class="sidebar-right__online-img ">
+                    </div>
+                    <p class="sidebar-right__online-name ">Jackson Aston</p>
+                </a>
+                <a href="# " class="sidebar-right__online-item ">
+                    <div class="user__online ">
+                        <img src="./assets/images/member-3.png " alt=" " class="sidebar-right__online-img ">
+                    </div>
+                    <p class="sidebar-right__online-name ">Samona Rose</p>
+                </a>
             </div>
         </div>
     </div>
+    <script src="./assets/js/menu.js"></script>
 </body>
 
 </html>
